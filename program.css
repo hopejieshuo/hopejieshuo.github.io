@@ -10,3 +10,7 @@
     width:100%;
     text-align:center;
 }
+.tablink, .tablink:hover, .tablink:visited{
+    text-decoration:none;
+    color:#ffffff;
+}
