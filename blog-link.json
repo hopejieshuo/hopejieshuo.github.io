@@ -2,8 +2,8 @@
     "data":[
         {
             "index":0,
-            "canGoto":false,
-            "gotoLink":""
+            "canGoto":true,
+            "gotoLink":"./blog/1.html"
         }
     ]
 }
