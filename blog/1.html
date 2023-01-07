@@ -31,95 +31,73 @@
             </nav>
         </div><br><br>
         
-        <div class="title-main">How to rotate computer screen with C/C++?</div><br>
+        <div class="title-main">Some Of The ByteBeat I Found</div><br>
         
         <div class="blog-main">
             <div class="blog-paragraph">
-                Today,I maked a video about rotate computer screen with C/C++,<br>
-                but I can not push my code in Bilibili,so I am pushing my code in here.<br>
-                Note:You should including "windows.h" and "math.h",defining a constant called PI and its value is "acos(-1.0)".
-            </div><br>
-            <div class="blog-paragraph">
-                First,the screen rotates around the vertex in the upper-left corner.<br>
-                Below is the code about rotating clockwise:<br>
+                Hello,everyone.I found some ByteBeat.<br>
+                Now let us looking and using these ByteBeat:<br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = 0, pos[0].y = 0;<br>
-                    pos[1].x = cos(a) * w, pos[1].y = sin(a) * w;<br>
-                    pos[2].x = (-1) * (sin(a) * h), pos[2].y = cos(a) * h;
-                </div><br>
-                Below is the code for counterclockwise rotation:<br>
+                    8000Hz<br>
+                    (((t &gt;&gt; 6 | t &gt;&gt; 8) * t) & 128)<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tDQKFGws1MwU6hRADMsNBW0FEo0FdQUDI0sNJVqAQ">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = 0, pos[0].y = 0;<br>
-                    pos[1].x = cos(a) * w, pos[1].y = (-1) * (sin(a) * w);<br>
-                    pos[2].x = sin(a) * h, pos[2].y = cos(a) * h;
-                </div>
-            </div><br>
-            <div class="blog-paragraph">
-                Second,the screen rotates around the vertex in the upper-right corner.<br>
-                Below is the code about rotating clockwise:<br>
+                    8000Hz<br>
+                    (t * (t ^ t + (t &gt;&gt; 15 | 1) ^ (t - 1280 ^ t) &gt;&gt; 10))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0ihR0FIAEnEKJQraIIadnYKhqUKNgqEmUAzI11UwNLIwAMlrguUMNDWVagE">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = w - (cos(a) * w), pos[0].y = (-1) * (sin(a) * w);<br>
-                    pos[1].x = w, pos[1].y = 0;<br>
-                    pos[2].x = w - ((cos(a) * w) + (sin(a) * h)), pos[2].y = (cos(a) * h) - (sin(a) * w);
-                </div><br>
-                Below is the code for counterclockwise rotation:<br>
+                    8000Hz<br>
+                    (t * ((t &gt;&gt; 7 | t &gt;&gt; 9) & 30))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0ihR0FLQAJJ2dgrmCjUKYIalpoKagrGBpqZSLQA">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = w - (cos(a) * w), pos[0].y = sin(a) * w;<br>
-                    pos[1].x = w, pos[1].y = 0;<br>
-                    pos[2].x = w - ((cos(a) * w) + (sin(a) * h)), pos[2].y = (cos(a) * h) + (sin(a) * w);
-                </div>
-            </div><br>
-            <div class="blog-paragraph">
-                Third,the screen rotates around the vertex in the bottom-left corner.<br>
-                Below is the code about rotating clockwise:<br>
+                    8000Hz<br>
+                    (128 * sin(sin(t / 100) - t / (2 + (t &gt;&gt; 10 & t &gt;&gt; 12) % 9)) + 128)<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0jA0slDQUijOzNMA4RIFfQVDAwNNBV0FEFPDSEFbAShoZwcUVVBTgLCMNBVUFSw1NYFyQN2aSrUA">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = sin(a) * h, pos[0].y = h - (cos(a) * h);<br>
-                    pos[1].x = (sin(a) * h) + (cos(a) * w), pos[1].y = h - (cos(a) * h - sin(a) * w);<br>
-                    pos[2].x = 0, pos[2].y = h;
-                </div><br>
-                Below is the code for counterclockwise rotation:<br>
+                    8000Hz<br>
+                    (((9 * t) & (t &gt;&gt; 4)) | ((5 * t) & (t &gt;&gt; 7)) | ((3 * t & t &gt;&gt; 13)))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tDQsFTQUijRVFBT0ChRsLNTMNHUVKhR0NAwRRU2hwobg4SBomBBQ2NNTU2lWgA">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = (-1) * (sin(a) * h), pos[0].y = h - (cos(a) * h);<br>
-                    pos[1].x = (cos(a) * w) - (sin(a) * h), pos[1].y = h - (cos(a) * h - sin(a) * w);<br>
-                    pos[2].x = 0, pos[2].y = h;
-                </div>
-            </div><br>
-            <div class="blog-paragraph">
-                Fourth,the screen rotates around the vertex in the bottom-right corner.<br>
-                Below is the code about rotating clockwise:<br>
+                    8000Hz<br>
+                    ((t ^- 8) * (t &gt;&gt; 8))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tAoUYjTVbDQVNBSADLt7IBMTaVaAA">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = w - (cos(a) * w - sin(a) * h), pos[0].y = h - (cos(a) * h + sin(a) * w);<br>
-                    pos[1].x = w + (sin(a) * h), pos[1].y = h - (cos(a) * h);<br>
-                    pos[2].x = w - (cos(a) * w), pos[2].y = h - (sin(a) * w);
-                </div><br>
-                Below is the code for counterclockwise rotation:<br>
+                    8000Hz<br>
+                    ((t &gt;&gt; 4 &gt;&gt; (t & t &gt;&gt; 11)) * (t &gt;&gt; 4 &gt;&gt; (t & t &gt;&gt; 11) & 128 ? -1 : 1) + (t &gt;&gt; t / (t & 65536 ? 2 : 3) & 63) + (3000 / (t & 4095) & 100))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tAoUbCzUzABEUCmmgKYa2ioqamgpYBLDsg0NLJQsFfQNVSwUgDytaFKSxT0ISrNTE2NzYAKjIDyxiD1ZsZgVcYGBgYwNSYGlqZgowwMNDWVagE">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    POINT pos[3];<br>
-                    pos[0].x = w - (cos(a) * w + sin(a) * h), pos[0].y = h - (cos(a) * h - sin(a) * w);<br>
-                    pos[1].x = w - (sin(a) * h), pos[1].y = h - (cos(a) * h);<br>
-                    pos[2].x = w - (cos(a) * w), pos[2].y = h + (sin(a) * w);
-                </div>
-            </div><br>
-            <div class="blog-paragraph">
-                So how to use this code in our project?<br>
-                You should use the <i>PlgBlt Function</i> to draw the desired bitmap based on the coordinates:<br>
+                    8000Hz<br>
+                    (t * (((t &gt;&gt; 11) & (t &gt;&gt; 8)) & (123 & (t &gt;&gt; 3))))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0ihR0FLQ0ABSdnYKhoaaCmoKELaFJphtaGQMFzLWBAKlWgA">(Click To Listen)</a>
+                </div><br><br>
                 <div class="blog-code">
-                    HDC hdc = GetDC(0);<br>
-                    int w = GetSystemMetrics(0), h = GetSystemMetrics(1);<br>
-                    POINT pos[3];<br>
-                    //put you rotate coordinates code in here<br>
-                    PlgBlt(hdc, pos, hdc, 0, 0, w, h, 0, 0, 0);<br>
-                    ReleaseDC(0,hdc);<br>
-                    DeleteObject(hdc);
-                </div><br>
-                So that's it for today, I will push my code in <a href="../doc/ScreenRotate.zip"><i>This Link</i></a>,bye!
+                    8000Hz<br>
+                    ((t | (t &gt;&gt; 9 | t &gt;&gt; 7)) * t & (t &gt;&gt; 11 | t &gt;&gt; 9))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tAoUahRABJ2dgqWQBaYYa6pqaAFZKpBJQwNYTKWmppKtQA">(Click To Listen)</a>
+                </div><br><br>
+                <div class="blog-code">
+                    8000Hz<br>
+                    (t * ((t &gt;&gt; 9 | t &gt;&gt; 13) & 25 & t &gt;&gt; 6))<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0ihR0FLQAJJ2dgqWCjUKYIahsaaCmoKRKZAA8800NZVqAQ">(Click To Listen)</a>
+                </div><br><br>
+                <div class="blog-code">
+                    8000Hz<br>
+                    (((t & t &gt;&gt; 8) | (t & t &gt;&gt; 13)) * t)<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0tDQKFFQUyhRsLNTsNBUqFFAcA2NNTUVtBRKNJVqAQ">(Click To Listen)</a>
+                </div><br><br>
+                <div class="blog-code">
+                    22050Hz<br>
+                    (t &gt;&gt; 6 ^ t & t &gt;&gt; 9 ^ t &gt;&gt; 12 | (t &lt;&lt; (t &gt;&gt; 6) % 4 ^- t &- t &gt;&gt; 13) % 128 ^- t &gt;&gt; 1)<br><br>
+                    <a href="https://sarpnt.github.io/bytebeat-composer/#v4q1ZKzk9JVbJS0ihRsLNTMFOIUyhRUFMAcyzBHCDD0EihRgGowMZGAapMU0FVwUQhThekWBeqyBgkaGhkAREGiWgq6SgVJ+YW5KQGJZYALTEyMjA1qAUA">(Click To Listen)</a>
+                </div><br><br>
+                So that's it for today,bye!
             </div>
         </div>
     </body>

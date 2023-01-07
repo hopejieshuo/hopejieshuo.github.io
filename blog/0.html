@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hopejieshuo - Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" context="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+        
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="blog-style.css">
+    </head>
+    <body>
+        <div class="navline navline-main">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <h1 class="navline navline-title">Blog</h1>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbardrop" data-toggle="dropdown">DropList</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./index.html">Index</a>
+                            <a class="dropdown-item" href="./blog.html">Blog</a>
+                            <a class="dropdown-item" href="./program.html">Program</a>
+                            <a class="dropdown-item" href="https://github.com/hopejieshuo">Github</a>
+                            <a class="dropdown-item" href="https://space.bilibili.com/529804852">Bilibili</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div><br><br>
+        
+        <div class="title-main">How to rotate computer screen with C/C++?</div><br>
+        
+        <div class="blog-main">
+            <div class="blog-paragraph">
+                Today,I maked a video about rotate computer screen with C/C++,<br>
+                but I can not push my code in Bilibili,so I am pushing my code in here.<br>
+                Note:You should including "windows.h" and "math.h",defining a constant called PI and its value is "acos(-1.0)".
+            </div><br>
+            <div class="blog-paragraph">
+                First,the screen rotates around the vertex in the upper-left corner.<br>
+                Below is the code about rotating clockwise:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = 0, pos[0].y = 0;<br>
+                    pos[1].x = cos(a) * w, pos[1].y = sin(a) * w;<br>
+                    pos[2].x = (-1) * (sin(a) * h), pos[2].y = cos(a) * h;
+                </div><br>
+                Below is the code for counterclockwise rotation:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = 0, pos[0].y = 0;<br>
+                    pos[1].x = cos(a) * w, pos[1].y = (-1) * (sin(a) * w);<br>
+                    pos[2].x = sin(a) * h, pos[2].y = cos(a) * h;
+                </div>
+            </div><br>
+            <div class="blog-paragraph">
+                Second,the screen rotates around the vertex in the upper-right corner.<br>
+                Below is the code about rotating clockwise:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = w - (cos(a) * w), pos[0].y = (-1) * (sin(a) * w);<br>
+                    pos[1].x = w, pos[1].y = 0;<br>
+                    pos[2].x = w - ((cos(a) * w) + (sin(a) * h)), pos[2].y = (cos(a) * h) - (sin(a) * w);
+                </div><br>
+                Below is the code for counterclockwise rotation:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = w - (cos(a) * w), pos[0].y = sin(a) * w;<br>
+                    pos[1].x = w, pos[1].y = 0;<br>
+                    pos[2].x = w - ((cos(a) * w) + (sin(a) * h)), pos[2].y = (cos(a) * h) + (sin(a) * w);
+                </div>
+            </div><br>
+            <div class="blog-paragraph">
+                Third,the screen rotates around the vertex in the bottom-left corner.<br>
+                Below is the code about rotating clockwise:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = sin(a) * h, pos[0].y = h - (cos(a) * h);<br>
+                    pos[1].x = (sin(a) * h) + (cos(a) * w), pos[1].y = h - (cos(a) * h - sin(a) * w);<br>
+                    pos[2].x = 0, pos[2].y = h;
+                </div><br>
+                Below is the code for counterclockwise rotation:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = (-1) * (sin(a) * h), pos[0].y = h - (cos(a) * h);<br>
+                    pos[1].x = (cos(a) * w) - (sin(a) * h), pos[1].y = h - (cos(a) * h - sin(a) * w);<br>
+                    pos[2].x = 0, pos[2].y = h;
+                </div>
+            </div><br>
+            <div class="blog-paragraph">
+                Fourth,the screen rotates around the vertex in the bottom-right corner.<br>
+                Below is the code about rotating clockwise:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = w - (cos(a) * w - sin(a) * h), pos[0].y = h - (cos(a) * h + sin(a) * w);<br>
+                    pos[1].x = w + (sin(a) * h), pos[1].y = h - (cos(a) * h);<br>
+                    pos[2].x = w - (cos(a) * w), pos[2].y = h - (sin(a) * w);
+                </div><br>
+                Below is the code for counterclockwise rotation:<br>
+                <div class="blog-code">
+                    POINT pos[3];<br>
+                    pos[0].x = w - (cos(a) * w + sin(a) * h), pos[0].y = h - (cos(a) * h - sin(a) * w);<br>
+                    pos[1].x = w - (sin(a) * h), pos[1].y = h - (cos(a) * h);<br>
+                    pos[2].x = w - (cos(a) * w), pos[2].y = h + (sin(a) * w);
+                </div>
+            </div><br>
+            <div class="blog-paragraph">
+                So how to use this code in our project?<br>
+                You should use the <i>PlgBlt Function</i> to draw the desired bitmap based on the coordinates:<br>
+                <div class="blog-code">
+                    HDC hdc = GetDC(0);<br>
+                    int w = GetSystemMetrics(0), h = GetSystemMetrics(1);<br>
+                    POINT pos[3];<br>
+                    //put you rotate coordinates code in here<br>
+                    PlgBlt(hdc, pos, hdc, 0, 0, w, h, 0, 0, 0);<br>
+                    ReleaseDC(0,hdc);<br>
+                    DeleteObject(hdc);
+                </div><br>
+                So that's it for today, I will push my code in <a href="../doc/ScreenRotate.zip"><i>This Link</i></a>,bye!
+            </div>
+        </div>
+    </body>
+</html>
