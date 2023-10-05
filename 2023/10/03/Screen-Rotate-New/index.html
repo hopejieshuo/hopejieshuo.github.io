@@ -16,24 +16,28 @@
   <meta name="author" content="hopejieshuo">
   <meta name="keywords" content="hopejieshuo">
   
-    <meta name="description" content="About the problem that the font is misaligned when Seewo opens the PPT.">
+    <meta name="description" content="Customise a function in C&#x2F;C++ to get the coordinates of the points of a rotated rectangle.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PPT Problem From Seewo">
-<meta property="og:url" content="http://hopejieshuo.github.io/2023/04/06/Seewo-PPT-Problem/index.html">
+<meta property="og:title" content="Custom Rotation Function">
+<meta property="og:url" content="http://hopejieshuo.github.io/2023/10/03/Screen-Rotate-New/index.html">
 <meta property="og:site_name" content="hopejieshuo Blog">
-<meta property="og:description" content="About the problem that the font is misaligned when Seewo opens the PPT.">
+<meta property="og:description" content="Customise a function in C&#x2F;C++ to get the coordinates of the points of a rotated rectangle.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-04-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-03T13:20:15.767Z">
+<meta property="og:image" content="https://www.helloimg.com/images/2023/10/05/oH7kV9.jpg">
+<meta property="og:image" content="https://www.helloimg.com/images/2023/10/05/oH7VXX.jpg">
+<meta property="og:image" content="https://www.helloimg.com/images/2023/10/05/oH7VXX.jpg">
+<meta property="article:published_time" content="2023-10-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-05T14:41:02.870Z">
 <meta property="article:author" content="hopejieshuo">
-<meta property="article:tag" content="Other">
+<meta property="article:tag" content="C&#x2F;C++">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.helloimg.com/images/2023/10/05/oH7kV9.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>PPT Problem From Seewo - hopejieshuo Blog</title>
+  <title>Custom Rotation Function - hopejieshuo Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="PPT Problem From Seewo"></span>
+            <span id="subtitle" data-typed-text="Custom Rotation Function"></span>
           
         </div>
 
@@ -230,8 +234,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-06 00:00" pubdate>
-          2023-04-06
+        <time datetime="2023-10-03 00:00" pubdate>
+          2023-10-03
         </time>
       </span>
     
@@ -242,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k words
+          2k words
         
       </span>
     
@@ -253,7 +257,7 @@
         
         
         
-          10 mins
+          18 mins
         
       </span>
     
@@ -299,24 +303,22 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">PPT Problem From Seewo</h1>
+            <h1 style="display: none">Custom Rotation Function</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h1><p>About the purpose of writing this blog is solving a problem about Seewo.<br>I don’t like to see the font misalignment of the PPT because it will make the process of taking notes difficult.<br>So I offer a more common solution: reinstall.  </p>
-<h1 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h1><p>A computer that has a problem, <a target="_blank" rel="noopener" href="https://hopejieshuo.lanzoum.com/iDgQs0sahguh">Office Tool Plus</a>.  </p>
-<h1 id="Tutorial"><a href="#Tutorial" class="headerlink" title="Tutorial"></a>Tutorial</h1><ol>
-<li>Download Office-Tool-Plus.zip and unzip it  </li>
-<li>Open the Office Tool Plus.exe inside and agree to the User Agreement(Tip:Disagreement to the User Agreement may result in failure to open)  </li>
-<li>If a message box appears prompting an update, you can click No to cancel to save time.  </li>
-<li>Click the Deploy button in the left column.  </li>
-<li>Click the triangle button next to the Start Deployment button, select Import XML Configuration, import the Configuration.xml file in the folder where the EXE program is located.  </li>
-<li>Select Download in Deployment Mode and start the deployment.  </li>
-<li>After the download is complete, select Install in the Deployment Mode option and start the deployment.  </li>
-<li>After the installation is completed, close the program, and after opening the PPT, you will find that the font is no longer misplaced.</li>
+                <h1 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h1><p>That’s right, I made this video today mainly to fill in the gaps from the last video. Still, I would recommend you watch the video before reading this blog, as I don’t intend to write too much about it here.</p>
+<h1 id="Caveat"><a href="#Caveat" class="headerlink" title="Caveat"></a>Caveat</h1><ol>
+<li><code>math.h</code> and <code>windows.h</code> header files are required to use this function.<br></li>
+<li>If a PI definition is missing or a more precise PI definition is needed, the statement <code>#define PI acos( -1.0 )</code> can be used directly.<br></li>
+<li>If you don’t know how to convert between radians and angles, see <code>#define D2R(a) (a * (PI / 180))</code> and <code>#define R2D(a) (a * (180 / PI))</code>, where the former converts angles to radians and the latter converts radians to angles</li>
 </ol>
-<h1 id="Ending"><a href="#Ending" class="headerlink" title="Ending"></a>Ending</h1><p>However, when you open PPT, DOC and other files, you may be prompted to choose an application to open, and you can choose WPS Office to continue to use.<br>According to experience, the reason for PPT font confusion may be due to the lack of some core support libraries, resulting in fonts that cannot be displayed normally.  </p>
+<h1 id="Main-Function"><a href="#Main-Function" class="headerlink" title="Main Function"></a>Main Function</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">GetRotateRectPosition</span><span class="hljs-params">(POINT pt, SIZE sz, <span class="hljs-type">float</span> angle, PPOINT ppt)</span>&#123;<br>	ppt[<span class="hljs-number">0</span>].x = pt.x + <span class="hljs-built_in">sin</span>(angle) * pt.y - <span class="hljs-built_in">cos</span>(angle) * pt.x, ppt[<span class="hljs-number">0</span>].y = pt.y - <span class="hljs-built_in">cos</span>(angle) * pt.y - <span class="hljs-built_in">sin</span>(angle) * pt.x;<br>	ppt[<span class="hljs-number">1</span>].x = ppt[<span class="hljs-number">0</span>].x + <span class="hljs-built_in">cos</span>(angle) * sz.cx, ppt[<span class="hljs-number">1</span>].y = ppt[<span class="hljs-number">0</span>].y + <span class="hljs-built_in">sin</span>(angle) * sz.cx;<br>	ppt[<span class="hljs-number">2</span>].x = ppt[<span class="hljs-number">0</span>].x - <span class="hljs-built_in">sin</span>(angle) * sz.cy, ppt[<span class="hljs-number">2</span>].y = ppt[<span class="hljs-number">0</span>].y + <span class="hljs-built_in">cos</span>(angle) * sz.cy;<br>&#125;<br></code></pre></td></tr></table></figure><br>
+<p>The parameter pt denotes the centre of rotation, the parameter sz denotes the size of the rectangle, the parameter angle denotes the arc of rotation (in the positive clockwise direction), and the parameter ppt is used to pass the coordinates of the three vertices of the rotated rectangle.</p>
+<h1 id="Take-An-Example"><a href="#Take-An-Example" class="headerlink" title="Take An Example"></a>Take An Example</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;windows.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;math.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> PI acos( -1.0 )</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> D2R(a) (a * (PI / 180))</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> R2D(a) (a * (180 / PI))</span><br><br><span class="hljs-type">void</span> <span class="hljs-title function_">GetRotateRectPosition</span><span class="hljs-params">(POINT pt, SIZE sz, <span class="hljs-type">float</span> angle, PPOINT ppt)</span>&#123;<br>	ppt[<span class="hljs-number">0</span>].x = pt.x + <span class="hljs-built_in">sin</span>(angle) * pt.y - <span class="hljs-built_in">cos</span>(angle) * pt.x, ppt[<span class="hljs-number">0</span>].y = pt.y - <span class="hljs-built_in">cos</span>(angle) * pt.y - <span class="hljs-built_in">sin</span>(angle) * pt.x;<br>	ppt[<span class="hljs-number">1</span>].x = ppt[<span class="hljs-number">0</span>].x + <span class="hljs-built_in">cos</span>(angle) * sz.cx, ppt[<span class="hljs-number">1</span>].y = ppt[<span class="hljs-number">0</span>].y + <span class="hljs-built_in">sin</span>(angle) * sz.cx;<br>	ppt[<span class="hljs-number">2</span>].x = ppt[<span class="hljs-number">0</span>].x - <span class="hljs-built_in">sin</span>(angle) * sz.cy, ppt[<span class="hljs-number">2</span>].y = ppt[<span class="hljs-number">0</span>].y + <span class="hljs-built_in">cos</span>(angle) * sz.cy;<br>&#125;<br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>	<span class="hljs-type">int</span> w, h, angle;<br>	POINT pt;<br>	POINT ppt[<span class="hljs-number">3</span>];<br>	SIZE sz;<br>	HDC hdc;<br>	<br>	<span class="hljs-keyword">for</span>(;;)&#123;<br>		hdc = GetDC(<span class="hljs-number">0</span>);<br>		w = GetSystemMetrics(<span class="hljs-number">0</span>), h = GetSystemMetrics(<span class="hljs-number">1</span>);<br>		pt.x = w / <span class="hljs-number">2</span>, pt.y = h / <span class="hljs-number">2</span>;<br>		sz.cx = w, sz.cy = h;<br>		angle = <span class="hljs-number">1</span>;<br>		GetRotateRectPosition(pt, sz, D2R(angle), ppt);<br>		PlgBlt(hdc, ppt, hdc, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, w, h, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);<br>		ReleaseDC(<span class="hljs-number">0</span>, hdc);<br>		DeleteObject(hdc);<br>		Sleep(<span class="hljs-number">100</span>);<br>	&#125;<br>	<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>Here’s an example where you can see that it’s rotated around the centre of the rectangle, and the results don’t show any surprises, as shown below.<br><img src="https://www.helloimg.com/images/2023/10/05/oH7kV9.jpg" srcset="/img/loading.gif" lazyload alt="step-0"><br><img src="https://www.helloimg.com/images/2023/10/05/oH7VXX.jpg" srcset="/img/loading.gif" lazyload alt="step-1"><br><img src="https://www.helloimg.com/images/2023/10/05/oH7VXX.jpg" srcset="/img/loading.gif" lazyload alt="step-2"></p>
+<h1 id="Ending"><a href="#Ending" class="headerlink" title="Ending"></a>Ending</h1><p>None Ending…</p>
 
                 
               </div>
@@ -329,7 +331,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Other/">#Other</a>
+        <a href="/tags/C-C/">#C/C++</a>
       
     </div>
   
@@ -341,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>PPT Problem From Seewo</div>
-      <div>http://hopejieshuo.github.io/2023/04/06/Seewo-PPT-Problem/</div>
+      <div>Custom Rotation Function</div>
+      <div>http://hopejieshuo.github.io/2023/10/03/Screen-Rotate-New/</div>
     </div>
     <div class="license-meta">
       
@@ -354,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>2023-04-06</div>
+          <div>2023-10-03</div>
         </div>
       
       
@@ -386,18 +388,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/03/Screen-Rotate-New/" title="Custom Rotation Function">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Custom Rotation Function</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/25/ByteBeat/" title="Some Of The ByteBeat I Found">
-                        <span class="hidden-mobile">Some Of The ByteBeat I Found</span>
+                      <a href="/2023/04/06/Seewo-PPT-Problem/" title="PPT Problem From Seewo">
+                        <span class="hidden-mobile">PPT Problem From Seewo</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
